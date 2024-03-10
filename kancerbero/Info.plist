@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSHumanReadableCopyright</key>
+	<string>Kayros uno</string>
+	<key>CFBundleDisplayName</key>
+	<string>macControl Kancerbero</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>NSSystemExtensionUsageDescription</key>
+	<string>Prueba de system extension - kayros - macControl kancerbero</string>
+	<key>NetworkExtension</key>
+	<dict>
+		<key>NEMachServiceName</key>
+		<string>$(TeamIdentifierPrefix)group.uno.kayros.macControl</string>
+		<key>NEProviderClasses</key>
+		<dict>
+			<key>com.apple.networkextension.filter-packet</key>
+			<string>$(PRODUCT_MODULE_NAME).FilterPacketProvider</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,90 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "\n\nThis program is a test to control mac systems \n\n" : {
+
+    },
+    "?" : {
+
+    },
+    "..." : {
+
+    },
+    "Agents:" : {
+
+    },
+    "Alejandro Garcia - alejandro.garciad75@icloud.com" : {
+
+    },
+    "Choose one activity" : {
+
+    },
+    "Content2" : {
+
+    },
+    "Daemons" : {
+
+    },
+    "Daemons view" : {
+
+    },
+    "Daemons:" : {
+
+    },
+    "Don't Move" : {
+
+    },
+    "Hello, World!" : {
+
+    },
+    "It is recommended to move the app to the Applications folder" : {
+
+    },
+    "kayros.uno" : {
+
+    },
+    "macControl" : {
+
+    },
+    "macControl v1.0" : {
+
+    },
+    "Move" : {
+
+    },
+    "Move App" : {
+
+    },
+    "Network" : {
+
+    },
+    "Network view" : {
+
+    },
+    "Network:" : {
+
+    },
+    "OK" : {
+
+    },
+    "Open Logs" : {
+
+    },
+    "Otro" : {
+
+    },
+    "SETTINGS " : {
+
+    },
+    "Storage" : {
+
+    },
+    "Storage view" : {
+
+    },
+    "Storage:" : {
+
+    }
+  },
+  "version" : "1.0"
+}

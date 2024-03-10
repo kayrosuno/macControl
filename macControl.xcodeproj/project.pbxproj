@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A903662D2A8DAD88002A1EF2 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A903662C2A8DAD88002A1EF2 /* NetworkExtension.framework */; };
+		A90366302A8DAD88002A1EF2 /* FilterPacketProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A903662F2A8DAD88002A1EF2 /* FilterPacketProvider.swift */; };
+		A90366322A8DAD88002A1EF2 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90366312A8DAD88002A1EF2 /* main.swift */; };
+		A91472422AA51D47007B1CCB /* IPCConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91472412AA51D47007B1CCB /* IPCConnection.swift */; };
+		A91472432AA5277E007B1CCB /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94B5ED52A9946F800012DC7 /* Log.swift */; };
+		A92527D12B9D3CF5002301F4 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A92527D02B9D3CF5002301F4 /* README.md */; };
+		A929F1B32A96BE2F00C97434 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A929F1B22A96BE2F00C97434 /* SidebarView.swift */; };
+		A94B5ED22A9944EB00012DC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94B5ED12A9944EB00012DC7 /* AppDelegate.swift */; };
+		A94B5ED62A9946F800012DC7 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94B5ED52A9946F800012DC7 /* Log.swift */; };
+		A94B5ED82A99F0BC00012DC7 /* MacControlError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94B5ED72A99F0BC00012DC7 /* MacControlError.swift */; };
+		A95870332A8DB9BC00C39AFB /* macControlApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95870322A8DB9BC00C39AFB /* macControlApp.swift */; };
+		A95870372A8DB9BC00C39AFB /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95870362A8DB9BC00C39AFB /* Item.swift */; };
+		A95870392A8DB9BF00C39AFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A95870382A8DB9BF00C39AFB /* Assets.xcassets */; };
+		A958703C2A8DB9BF00C39AFB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A958703B2A8DB9BF00C39AFB /* Preview Assets.xcassets */; };
+		A95870422A8DBAA200C39AFB /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95870412A8DBAA200C39AFB /* RootView.swift */; };
+		A98E0AE22A9D3BBE00769E6E /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = A98E0AE12A9D3BBE00769E6E /* Localizable.xcstrings */; };
+		A9F107992A9696EB004257C2 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F107982A9696EB004257C2 /* AboutView.swift */; };
+		A9F1079F2A969857004257C2 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F1079E2A969857004257C2 /* SettingsView.swift */; };
+		A9F107A12A969895004257C2 /* ContentView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F107A02A969895004257C2 /* ContentView2.swift */; };
+		A9F107A32A969AA6004257C2 /* SidebarNetworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F107A22A969AA6004257C2 /* SidebarNetworkView.swift */; };
+		A9F107A52A969ACF004257C2 /* NetworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F107A42A969ACF004257C2 /* NetworkView.swift */; };
+		A9F107A72A969EAC004257C2 /* SidebarStorageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F107A62A969EAC004257C2 /* SidebarStorageView.swift */; };
+		A9F107A92A969EBC004257C2 /* StorageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F107A82A969EBC004257C2 /* StorageView.swift */; };
+		A9F107AB2A969EDA004257C2 /* SidebarDaemonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F107AA2A969EDA004257C2 /* SidebarDaemonsView.swift */; };
+		A9F107AD2A969EEB004257C2 /* DaemonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F107AC2A969EEB004257C2 /* DaemonsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A903662A2A8DAD87002A1EF2 /* uno.kayros.macControl.kancerbero.systemextension */ = {isa = PBXFileReference; explicitFileType = "wrapper.system-extension"; includeInIndex = 0; path = uno.kayros.macControl.kancerbero.systemextension; sourceTree = BUILT_PRODUCTS_DIR; };
+		A903662C2A8DAD88002A1EF2 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		A903662F2A8DAD88002A1EF2 /* FilterPacketProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterPacketProvider.swift; sourceTree = "<group>"; };
+		A90366312A8DAD88002A1EF2 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		A90366332A8DAD88002A1EF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A90366342A8DAD88002A1EF2 /* kancerbero.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = kancerbero.entitlements; sourceTree = "<group>"; };
+		A903663C2A8DB05A002A1EF2 /* SwiftData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftData.framework; path = System/Library/Frameworks/SwiftData.framework; sourceTree = SDKROOT; };
+		A91472412AA51D47007B1CCB /* IPCConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPCConnection.swift; sourceTree = "<group>"; };
+		A92527D02B9D3CF5002301F4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A929F1B22A96BE2F00C97434 /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
+		A94B5ED12A9944EB00012DC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A94B5ED52A9946F800012DC7 /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		A94B5ED72A99F0BC00012DC7 /* MacControlError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacControlError.swift; sourceTree = "<group>"; };
+		A95870302A8DB9BC00C39AFB /* macControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = macControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A95870322A8DB9BC00C39AFB /* macControlApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = macControlApp.swift; sourceTree = "<group>"; };
+		A95870362A8DB9BC00C39AFB /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		A95870382A8DB9BF00C39AFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A958703B2A8DB9BF00C39AFB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A958703D2A8DB9BF00C39AFB /* macControl.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macControl.entitlements; sourceTree = "<group>"; };
+		A95870412A8DBAA200C39AFB /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		A98E0AE12A9D3BBE00769E6E /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		A9F107982A9696EB004257C2 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		A9F1079E2A969857004257C2 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A9F107A02A969895004257C2 /* ContentView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView2.swift; sourceTree = "<group>"; };
+		A9F107A22A969AA6004257C2 /* SidebarNetworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarNetworkView.swift; sourceTree = "<group>"; };
+		A9F107A42A969ACF004257C2 /* NetworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkView.swift; sourceTree = "<group>"; };
+		A9F107A62A969EAC004257C2 /* SidebarStorageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarStorageView.swift; sourceTree = "<group>"; };
+		A9F107A82A969EBC004257C2 /* StorageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageView.swift; sourceTree = "<group>"; };
+		A9F107AA2A969EDA004257C2 /* SidebarDaemonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarDaemonsView.swift; sourceTree = "<group>"; };
+		A9F107AC2A969EEB004257C2 /* DaemonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaemonsView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A90366272A8DAD87002A1EF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A903662D2A8DAD88002A1EF2 /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A958702D2A8DB9BC00C39AFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A90366092A8DACA9002A1EF2 = {
+			isa = PBXGroup;
+			children = (
+				A92527D02B9D3CF5002301F4 /* README.md */,
+				A903662E2A8DAD88002A1EF2 /* kancerbero */,
+				A95870312A8DB9BC00C39AFB /* macControl */,
+				A903662B2A8DAD88002A1EF2 /* Frameworks */,
+				A90366132A8DACA9002A1EF2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A90366132A8DACA9002A1EF2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A903662A2A8DAD87002A1EF2 /* uno.kayros.macControl.kancerbero.systemextension */,
+				A95870302A8DB9BC00C39AFB /* macControl.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A903662B2A8DAD88002A1EF2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A903663C2A8DB05A002A1EF2 /* SwiftData.framework */,
+				A903662C2A8DAD88002A1EF2 /* NetworkExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A903662E2A8DAD88002A1EF2 /* kancerbero */ = {
+			isa = PBXGroup;
+			children = (
+				A91472412AA51D47007B1CCB /* IPCConnection.swift */,
+				A903662F2A8DAD88002A1EF2 /* FilterPacketProvider.swift */,
+				A90366312A8DAD88002A1EF2 /* main.swift */,
+				A90366332A8DAD88002A1EF2 /* Info.plist */,
+				A90366342A8DAD88002A1EF2 /* kancerbero.entitlements */,
+			);
+			path = kancerbero;
+			sourceTree = "<group>";
+		};
+		A94B5ED42A9946C200012DC7 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A94B5ED52A9946F800012DC7 /* Log.swift */,
+				A94B5ED72A99F0BC00012DC7 /* MacControlError.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		A95870312A8DB9BC00C39AFB /* macControl */ = {
+			isa = PBXGroup;
+			children = (
+				A94B5ED42A9946C200012DC7 /* Utils */,
+				A9F1079D2A9697A3004257C2 /* Data */,
+				A9F1079C2A96978E004257C2 /* App */,
+				A9F1079A2A96977D004257C2 /* Views */,
+				A95870382A8DB9BF00C39AFB /* Assets.xcassets */,
+				A98E0AE12A9D3BBE00769E6E /* Localizable.xcstrings */,
+				A958703D2A8DB9BF00C39AFB /* macControl.entitlements */,
+				A958703A2A8DB9BF00C39AFB /* Preview Content */,
+			);
+			path = macControl;
+			sourceTree = "<group>";
+		};
+		A958703A2A8DB9BF00C39AFB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A958703B2A8DB9BF00C39AFB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A9F1079A2A96977D004257C2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A9F1079E2A969857004257C2 /* SettingsView.swift */,
+				A9F107A02A969895004257C2 /* ContentView2.swift */,
+				A9F107982A9696EB004257C2 /* AboutView.swift */,
+				A95870412A8DBAA200C39AFB /* RootView.swift */,
+				A9F107A22A969AA6004257C2 /* SidebarNetworkView.swift */,
+				A9F107A42A969ACF004257C2 /* NetworkView.swift */,
+				A9F107A62A969EAC004257C2 /* SidebarStorageView.swift */,
+				A9F107A82A969EBC004257C2 /* StorageView.swift */,
+				A9F107AA2A969EDA004257C2 /* SidebarDaemonsView.swift */,
+				A9F107AC2A969EEB004257C2 /* DaemonsView.swift */,
+				A929F1B22A96BE2F00C97434 /* SidebarView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		A9F1079C2A96978E004257C2 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A95870322A8DB9BC00C39AFB /* macControlApp.swift */,
+				A94B5ED12A9944EB00012DC7 /* AppDelegate.swift */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		A9F1079D2A9697A3004257C2 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A95870362A8DB9BC00C39AFB /* Item.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A90366292A8DAD87002A1EF2 /* kancerbero */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A90366392A8DAD88002A1EF2 /* Build configuration list for PBXNativeTarget "kancerbero" */;
+			buildPhases = (
+				A90366262A8DAD87002A1EF2 /* Sources */,
+				A90366272A8DAD87002A1EF2 /* Frameworks */,
+				A90366282A8DAD87002A1EF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = kancerbero;
+			productName = kancerbero;
+			productReference = A903662A2A8DAD87002A1EF2 /* uno.kayros.macControl.kancerbero.systemextension */;
+			productType = "com.apple.product-type.system-extension";
+		};
+		A958702F2A8DB9BC00C39AFB /* macControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A958703E2A8DB9BF00C39AFB /* Build configuration list for PBXNativeTarget "macControl" */;
+			buildPhases = (
+				A958702C2A8DB9BC00C39AFB /* Sources */,
+				A958702D2A8DB9BC00C39AFB /* Frameworks */,
+				A958702E2A8DB9BC00C39AFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = macControl;
+			productName = macControl;
+			productReference = A95870302A8DB9BC00C39AFB /* macControl.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A903660A2A8DACA9002A1EF2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					A90366292A8DAD87002A1EF2 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					A958702F2A8DB9BC00C39AFB = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = A903660D2A8DACA9002A1EF2 /* Build configuration list for PBXProject "macControl" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				es,
+			);
+			mainGroup = A90366092A8DACA9002A1EF2;
+			productRefGroup = A90366132A8DACA9002A1EF2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A90366292A8DAD87002A1EF2 /* kancerbero */,
+				A958702F2A8DB9BC00C39AFB /* macControl */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A90366282A8DAD87002A1EF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A92527D12B9D3CF5002301F4 /* README.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A958702E2A8DB9BC00C39AFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A958703C2A8DB9BF00C39AFB /* Preview Assets.xcassets in Resources */,
+				A95870392A8DB9BF00C39AFB /* Assets.xcassets in Resources */,
+				A98E0AE22A9D3BBE00769E6E /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A90366262A8DAD87002A1EF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A91472422AA51D47007B1CCB /* IPCConnection.swift in Sources */,
+				A90366322A8DAD88002A1EF2 /* main.swift in Sources */,
+				A90366302A8DAD88002A1EF2 /* FilterPacketProvider.swift in Sources */,
+				A91472432AA5277E007B1CCB /* Log.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A958702C2A8DB9BC00C39AFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9F1079F2A969857004257C2 /* SettingsView.swift in Sources */,
+				A9F107A52A969ACF004257C2 /* NetworkView.swift in Sources */,
+				A95870422A8DBAA200C39AFB /* RootView.swift in Sources */,
+				A95870372A8DB9BC00C39AFB /* Item.swift in Sources */,
+				A94B5ED22A9944EB00012DC7 /* AppDelegate.swift in Sources */,
+				A9F107A12A969895004257C2 /* ContentView2.swift in Sources */,
+				A9F107A72A969EAC004257C2 /* SidebarStorageView.swift in Sources */,
+				A9F107AD2A969EEB004257C2 /* DaemonsView.swift in Sources */,
+				A9F107A92A969EBC004257C2 /* StorageView.swift in Sources */,
+				A95870332A8DB9BC00C39AFB /* macControlApp.swift in Sources */,
+				A94B5ED62A9946F800012DC7 /* Log.swift in Sources */,
+				A9F107A32A969AA6004257C2 /* SidebarNetworkView.swift in Sources */,
+				A94B5ED82A99F0BC00012DC7 /* MacControlError.swift in Sources */,
+				A9F107992A9696EB004257C2 /* AboutView.swift in Sources */,
+				A929F1B32A96BE2F00C97434 /* SidebarView.swift in Sources */,
+				A9F107AB2A969EDA004257C2 /* SidebarDaemonsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A90366212A8DACAA002A1EF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A90366222A8DACAA002A1EF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		A903663A2A8DAD88002A1EF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = kancerbero/kancerbero.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = AK37TK8X2Y;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = kancerbero/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = kancerbero;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = uno.kayros.macControl.kancerbero;
+				PRODUCT_NAME = "$(inherited)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "macControl-kancerbero-mbp-alejandro";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A903663B2A8DAD88002A1EF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = kancerbero/kancerbero.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = AK37TK8X2Y;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = kancerbero/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = kancerbero;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = uno.kayros.macControl.kancerbero;
+				PRODUCT_NAME = "$(inherited)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "macControl-kancerbero-mbp-alejandro";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A958703F2A8DB9BF00C39AFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macControl/macControl.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"macControl/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = AK37TK8X2Y;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = macControl;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = uno.kayros.macControl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "macControl-mbp-alejandro";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A95870402A8DB9BF00C39AFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macControl/macControl.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"macControl/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = AK37TK8X2Y;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = macControl;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = uno.kayros.macControl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "macControl-mbp-alejandro";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A903660D2A8DACA9002A1EF2 /* Build configuration list for PBXProject "macControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A90366212A8DACAA002A1EF2 /* Debug */,
+				A90366222A8DACAA002A1EF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A90366392A8DAD88002A1EF2 /* Build configuration list for PBXNativeTarget "kancerbero" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A903663A2A8DAD88002A1EF2 /* Debug */,
+				A903663B2A8DAD88002A1EF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A958703E2A8DB9BF00C39AFB /* Build configuration list for PBXNativeTarget "macControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A958703F2A8DB9BF00C39AFB /* Debug */,
+				A95870402A8DB9BF00C39AFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A903660A2A8DACA9002A1EF2 /* Project object */;
+}
