@@ -19,12 +19,14 @@ class FilterPacketProvider: NEFilterPacketProvider {
 		completionHandler(nil)
         
         logger.notice("kancerbero started")
+        os_log("kancerbero started")
     }
     
     override func stopFilter(with reason: NEProviderStopReason, completionHandler: @escaping () -> Void) {
 
 		// Add code here to tear down the filter
         completionHandler()
-        logger.notice("kancerbero  stopped")
+        logger.notice("kancerbero stopped")
+        os_log("kancerbero stopped")
     }
 }

@@ -32,6 +32,10 @@
 		A9F107A92A969EBC004257C2 /* StorageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F107A82A969EBC004257C2 /* StorageView.swift */; };
 		A9F107AB2A969EDA004257C2 /* SidebarDaemonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F107AA2A969EDA004257C2 /* SidebarDaemonsView.swift */; };
 		A9F107AD2A969EEB004257C2 /* DaemonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F107AC2A969EEB004257C2 /* DaemonsView.swift */; };
+		A9FC3A822B9E825A00045FE7 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FC3A812B9E825A00045FE7 /* Controller.swift */; };
+		A9FC3A832B9E83EF00045FE7 /* IPCConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91472412AA51D47007B1CCB /* IPCConnection.swift */; };
+		A9FC3A842B9E83FC00045FE7 /* MacControlError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94B5ED72A99F0BC00012DC7 /* MacControlError.swift */; };
+		A9FC3A862B9E85A100045FE7 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FC3A852B9E85A100045FE7 /* AppData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +48,7 @@
 		A903663C2A8DB05A002A1EF2 /* SwiftData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftData.framework; path = System/Library/Frameworks/SwiftData.framework; sourceTree = SDKROOT; };
 		A91472412AA51D47007B1CCB /* IPCConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPCConnection.swift; sourceTree = "<group>"; };
 		A92527D02B9D3CF5002301F4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A92527D22B9E6D3A002301F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		A929F1B22A96BE2F00C97434 /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
 		A94B5ED12A9944EB00012DC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A94B5ED52A9946F800012DC7 /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
@@ -65,6 +70,8 @@
 		A9F107A82A969EBC004257C2 /* StorageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageView.swift; sourceTree = "<group>"; };
 		A9F107AA2A969EDA004257C2 /* SidebarDaemonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarDaemonsView.swift; sourceTree = "<group>"; };
 		A9F107AC2A969EEB004257C2 /* DaemonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaemonsView.swift; sourceTree = "<group>"; };
+		A9FC3A812B9E825A00045FE7 /* Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
+		A9FC3A852B9E85A100045FE7 /* AppData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +146,7 @@
 		A95870312A8DB9BC00C39AFB /* macControl */ = {
 			isa = PBXGroup;
 			children = (
+				A92527D22B9E6D3A002301F4 /* Info.plist */,
 				A94B5ED42A9946C200012DC7 /* Utils */,
 				A9F1079D2A9697A3004257C2 /* Data */,
 				A9F1079C2A96978E004257C2 /* App */,
@@ -181,7 +189,9 @@
 			isa = PBXGroup;
 			children = (
 				A95870322A8DB9BC00C39AFB /* macControlApp.swift */,
+				A9FC3A852B9E85A100045FE7 /* AppData.swift */,
 				A94B5ED12A9944EB00012DC7 /* AppDelegate.swift */,
+				A9FC3A812B9E825A00045FE7 /* Controller.swift */,
 			);
 			name = App;
 			sourceTree = "<group>";
@@ -259,6 +269,9 @@
 				es,
 			);
 			mainGroup = A90366092A8DACA9002A1EF2;
+			packageReferences = (
+				A9FC3A802B9E715600045FE7 /* XCRemoteSwiftPackageReference "Sparkle" */,
+			);
 			productRefGroup = A90366132A8DACA9002A1EF2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -296,6 +309,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A91472422AA51D47007B1CCB /* IPCConnection.swift in Sources */,
+				A9FC3A842B9E83FC00045FE7 /* MacControlError.swift in Sources */,
 				A90366322A8DAD88002A1EF2 /* main.swift in Sources */,
 				A90366302A8DAD88002A1EF2 /* FilterPacketProvider.swift in Sources */,
 				A91472432AA5277E007B1CCB /* Log.swift in Sources */,
@@ -306,12 +320,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9FC3A832B9E83EF00045FE7 /* IPCConnection.swift in Sources */,
 				A9F1079F2A969857004257C2 /* SettingsView.swift in Sources */,
 				A9F107A52A969ACF004257C2 /* NetworkView.swift in Sources */,
 				A95870422A8DBAA200C39AFB /* RootView.swift in Sources */,
 				A95870372A8DB9BC00C39AFB /* Item.swift in Sources */,
+				A9FC3A862B9E85A100045FE7 /* AppData.swift in Sources */,
 				A94B5ED22A9944EB00012DC7 /* AppDelegate.swift in Sources */,
 				A9F107A12A969895004257C2 /* ContentView2.swift in Sources */,
+				A9FC3A822B9E825A00045FE7 /* Controller.swift in Sources */,
 				A9F107A72A969EAC004257C2 /* SidebarStorageView.swift in Sources */,
 				A9F107AD2A969EEB004257C2 /* DaemonsView.swift in Sources */,
 				A9F107A92A969EBC004257C2 /* StorageView.swift in Sources */,
@@ -523,6 +540,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = macControl/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = macControl;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -558,6 +576,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = macControl/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = macControl;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -607,6 +626,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A9FC3A802B9E715600045FE7 /* XCRemoteSwiftPackageReference "Sparkle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sparkle-project/Sparkle";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = A903660A2A8DACA9002A1EF2 /* Project object */;
 }

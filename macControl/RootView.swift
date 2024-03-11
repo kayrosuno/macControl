@@ -8,13 +8,12 @@
 import SwiftUI
 
 struct RootView: View {
-    @Environment(AppData.self) private var appData
-    @Binding  var path: NavigationPath
+    @EnvironmentObject  var appData: AppData
     
     var body: some View {
         NavigationSplitView(
             sidebar: {SidebarView()},
-            detail:  {NavigationStack (path: $path) {
+            detail:  {NavigationStack (path: $appData.path) {
                 
                 Text("Choose one activity")
                 
@@ -49,4 +48,5 @@ struct RootView: View {
             })
         
     }
+        
 }

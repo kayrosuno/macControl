@@ -9,17 +9,22 @@ import SwiftUI
 import SwiftData
 import os
 
+let NSSystemExtensionUsageDescriptionKey = "Hello user! This program install a system extension in your system to cath info regarding the networks connections. This extension run in user space and send the information to the main program to permit you to show all the information fron the GUI"
+///
+/// macControlApp is a program to catch network connections and show you graphically
+///
 @main
 struct macControlApp: App {
-    @State private var appData = AppData()
-    @State var path = NavigationPath()
+    //AppData para guardar estado de la aplicacion entre vistas
+    @StateObject private var appData = AppData(path: NavigationPath())
     @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+
     let logger = Logger(subsystem: Bundle.main.bundleIdentifier ?? "uno.kayros.macControl", category: "app")
     
-    
+   
     var body: some Scene {
         WindowGroup {
-            RootView(path: $path)
+            RootView()
             //.modelContainer(for: Item.self)
                 .environment(appData)
                 .sheet(isPresented: $appData.showAboutView){ AboutView() }
@@ -27,8 +32,8 @@ struct macControlApp: App {
                     ToolbarItem(placement: .principal)  //Network
                     {
                         Button {
-                            if !path.isEmpty { path.removeLast() }
-                            path.append(TipoVistaActiva.network)
+                            if !appData.path.isEmpty { appData.path.removeLast() }
+                            appData.path.append(TipoVistaActiva.network)
                             appData.vistaActiva = TipoVistaActiva.network
                             
                         } label: {
@@ -44,8 +49,8 @@ struct macControlApp: App {
                     ToolbarItem(placement: .principal)  //Storage
                     {
                         Button {
-                            if !path.isEmpty { path.removeLast() }
-                            path.append(TipoVistaActiva.storage)
+                            if !appData.path.isEmpty { appData.path.removeLast() }
+                            appData.path.append(TipoVistaActiva.storage)
                             appData.vistaActiva = TipoVistaActiva.storage
                             
                         } label: {
@@ -60,8 +65,8 @@ struct macControlApp: App {
                     ToolbarItem(placement: .principal)  //Daemons
                     {
                         Button {
-                            if !path.isEmpty { path.removeLast() }
-                            path.append(TipoVistaActiva.daemons)
+                            if !appData.path.isEmpty { appData.path.removeLast() }
+                            appData.path.append(TipoVistaActiva.daemons)
                             appData.vistaActiva = TipoVistaActiva.daemons
                             
                         } label: {
@@ -90,9 +95,19 @@ struct macControlApp: App {
                     
                 } //toolbar
             //Primera vista
-                .onAppear{path.append(TipoVistaActiva.network)
-                    logger.notice("macControl starting and showing")
+                .onAppear{appData.path.append(TipoVistaActiva.network)
+                    logger.notice("macControl starting and showing (onAppear)")
+                        
+                    appData.controller.window = NSApp.windows.first // Set a window to permit the controller show alerts
+                    
+                    appData.controller.viewWillAppear()
+                    
                 }
+                .onDisappear{
+                    logger.notice("macControl (onDisappear)")
+                    appData.controller.viewWillDisappear()
+                }
+                
             
         }
         .commands {
@@ -164,21 +179,3 @@ struct macControlApp: App {
     }
 } //struct
 
-
-
-@Observable
-class AppData: Identifiable {
-    //var path = NavigationPath()
-    var showAboutView = false
-    var showReloadView = false
-    var vistaActiva = TipoVistaActiva.network
-}
-
-//Los tipos de VistaActiva
-enum TipoVistaActiva
-{
-    case network //Vista del networking
-    case storage //Vista del storage
-    case start    //Vista inicial
-    case daemons //Vista agents & daemons
-}
